@@ -1,0 +1,32 @@
+{
+"Rules":[ 
+    { 
+       "SettingName":"AntiVirusProductName",
+       "Operator":"IsEquals",
+       "DataType":"String",
+       "Operand":"<AntiVirus Product name>",
+       "MoreInfoUrl":"<Whatever URL you like>",
+       "RemediationStrings":[ 
+          { 
+             "Language":"en_US",
+             "Title":"<AntiVirus Product name>  is not installed",
+             "Description": "Please make sure that <AntiVirus Product name> is installed."
+          }
+       ]
+    },
+    {
+       "SettingName":"Active",
+       "Operator":"IsEquals",
+       "DataType":"String",
+       "Operand":"On",
+       "MoreInfoUrl":"<Whatever URL you like>",
+       "RemediationStrings":[ 
+          { 
+             "Language": "en_US",
+             "Title": "<AntiVirus Product name> is not active",
+             "Description": "Make sure <AntiVirus Product name> is the active anti virus product."
+          }
+       ]
+    }
+ ]
+}
